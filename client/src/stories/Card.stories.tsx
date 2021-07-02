@@ -7,4 +7,7 @@ export default {
   title: 'Components/Card',
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Card />;
+const Template: Story = (args) => <Card {...args} />;
+
+export const Default = Template.bind({});
+Default.args = { rank: "A", symbol: "diamond" };
