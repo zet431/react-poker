@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Card: React.FC<Props> = ({rank, symbol}) => {
-  let renderSymbol, renderColor;
+  let renderSymbol;
   if(symbol == "spades") renderSymbol = "♠";
   else if(symbol == "diamond") renderSymbol = "♦";
   else if(symbol == "club") renderSymbol = "♣";
