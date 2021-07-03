@@ -7,7 +7,10 @@ export default {
   title: 'Components/Button',
 } as Meta;
 
-const Template: Story = (args) => <Button text={args.text} />;
+const Template: Story = (args) => <Button variant={args.variant} text={args.text} />;
 
-export const Default = Template.bind({});
-Default.args = {text: "Create Account"}
+export const Success = Template.bind({});
+Success.args = {variant: "success", text: "Create Account"}
+
+export const Danger = Template.bind({});
+Danger.args = {variant: "danger", text: "Leave Game"};
