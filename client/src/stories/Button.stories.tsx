@@ -7,6 +7,7 @@ export default {
   title: 'Components/Button',
 } as Meta;
 
-const Template: Story = (args) => <Button {...args} />;
+const Template: Story = (args) => <Button text={args.text} />;
 
 export const Default = Template.bind({});
+Default.args = {text: "Create Account"}
